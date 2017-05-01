@@ -1,3 +1,9 @@
+## Kinda Feelin It - A website
+
+## Deployment
+Currently this repo will automatically deploy to Github pages when changes are merged to the `master` branch. Travis CI does this behind the scenes. However, you can also deploy from your local environment using `npm run predeploy && npm run deploy`.
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -1516,17 +1522,17 @@ When you build the project, Create React App will place the `public` folder cont
 2. Install `serve` by running `npm install --save serve`.
 
 3. Add this line to `scripts` in `package.json`:
-    
+
     ```
     "now-start": "serve build/",
     ```
-    
+
 4. Run `now` from your project directory. You will see a **now.sh** URL in your output like this:
-    
+
     ```
     > Ready! https://your-project-dirname-tpspyhtdtk.now.sh (copied to clipboard)
     ```
-    
+
     Paste that URL into your browser when the build is complete, and you will see your deployed app.
 
 Details are available in [this article.](https://zeit.co/blog/now-static)
