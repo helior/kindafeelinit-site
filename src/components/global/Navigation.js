@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Navigation extends Component {
   render() {
     return (
-      <nav className="navbar navbar-toggleable-sm navbar-light bg-faded">
+      <nav className="navbar sticky-top navbar-toggleable-sm navbar-light bg-faded">
         <button
           className="navbar-toggler navbar-toggler-right"
           type="button" data-toggle="collapse"
