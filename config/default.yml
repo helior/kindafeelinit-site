@@ -1,0 +1,13 @@
+channels:
+  -
+    id: test
+    title: KFI Test
+    source: youtube
+    sourceInfo:
+      playlistId: PLibvOsOmFBWEjcFsShzJmotStqAq0J_G7
+  -
+    id: no-ragrets
+    title: No Ragrets
+    source: podcast
+    sourceInfo:
+      feedUrl: http://no-ragrets.surge.sh/feed.xml
