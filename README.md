@@ -1,7 +1,13 @@
 ## Kinda Feelin It - A website
 
-## Deployment
+### Development
+
+Run `$ yarn run start` to see it go!
+
+### Deployment
+
 Currently this repo will automatically deploy to Github pages when changes are merged to the `master` branch. Travis CI does this behind the scenes. However, you can also deploy from your local environment using `npm run predeploy && npm run deploy`.
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
