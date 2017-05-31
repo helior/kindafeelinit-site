@@ -4,7 +4,7 @@ class Channels extends Component {
   render() {
     return (
       <div className="channels-page">
-        <h1>Channels</h1>
+        <h1>Channels and stuff</h1>
       </div>
     )
   }

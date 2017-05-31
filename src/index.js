@@ -1,32 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './index.css';
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+import App from './components/app/index/index';
 
-import Navigation from './components/global/Navigation';
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
-import Support from './components/pages/Support';
-import Channels from './components/pages/Channels';
-
-const Site = () => (
+const Routes = () => (
   <Router>
     <div>
-      <Navigation />
-
-      <Route exact path="/" component={Home}/>
-      <Route exact path="/channels" component={Channels}/>
-      <Route exact path="/support" component={Support}/>
-      <Route exact path="/contact" component={Contact}/>
+      <Route path="/" component={App}/>
     </div>
   </Router>
 )
 
 ReactDOM.render(
-  <Site />,
+  <Routes />,
   document.getElementById('root')
 );
