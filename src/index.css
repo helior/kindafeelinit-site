@@ -1,5 +1,37 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#root {height:100%}
+.splash-screen {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('https://unsplash.it/200x200/?random&blur');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__shadow {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: radial-gradient(
+			circle at 50% 50%,
+			transparent,
+			transparent 10%,
+			black
+		);
+	}
+}
+
+.splash-canvas {
+	max-width: 100%;
 }

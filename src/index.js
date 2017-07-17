@@ -2,29 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
-import {
-  BrowserRouter as Router,
-  Route
-} from 'react-router-dom'
-
-import Navigation from './components/global/Navigation';
-import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
-import Support from './components/pages/Support';
-import Channels from './components/pages/Channels';
+import './script.js';
 
 const Site = () => (
-  <Router>
-    <div>
-      <Navigation />
-
-      <Route exact path="/" component={Home}/>
-      <Route exact path="/channels" component={Channels}/>
-      <Route exact path="/support" component={Support}/>
-      <Route exact path="/contact" component={Contact}/>
-    </div>
-  </Router>
+  <div className="splash-screen">
+    <div className="splash-screen__shadow"></div>
+    <canvas className="splash-canvas" id="splashCanvas" width="1500px" height="800px"></canvas>
+  </div>
 )
+
+
 
 ReactDOM.render(
   <Site />,
